@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yara Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Lightbox2 CSS and JS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="path/to/lightbox.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div class="accordion">
+    <div class="tab active" id="tab-1">
+        <label>Yara</label>
+        <div class="tab-content">
+            <h2 class="tab-title">Yara</h2>
+            <p>Explore my portfolio and discover the projects I've worked on!</p>
+        </div>
+    </div>
+
+    <div class="tab" id="tab-2">
+        <label>Websites from scratch</label>
+        <div class="tab-content">
+            <h2 class="tab-title">Websites from scratch</h2>
+            <div class="section-description">
+                <p>These are the websites I have built from scratch. Click on any thumbnail to view the website in an iframe below.</p>
+            </div>
+            <div class="thumbnail-container">
+                <div class="thumbnail" data-url="https://abujildeh.com" data-section="project">
+                    <img src="img/abujildeh-thumbnail.png" alt="Project 1">
+                    <p>Abu Jildeh & Armeet</p>
+                </div>
+                <div class="thumbnail" data-url="https://example2.com" data-section="project">
+                    <img src="img/alida-sun-comingsoon.png" alt="Project 2">
+                    <p>Project 2</p>
+                </div>    
+            </div>
+            <iframe id="project-iframe" style="width: 100%; height: 500px; display: none;"></iframe>
+        </div>
+    </div>
+
+    <div class="tab" id="tab-3">
+        <label>CMS development and maintenance</label>
+        <div class="tab-content">
+            <h2 class="tab-title">CMS development and maintenance</h2>
+            <div class="section-description">
+                <p>These are websites I have contributed to using Content Management Systems. Click on any thumbnail to view the website in an iframe below.</p>
+            </div>
+            <div class="thumbnail-container">
+                <div class="thumbnail" onclick="showIframe('https://www.frieda-frauenzentrum.de/', 'cms')">
+                    <img src="img/frieda-frauenzenturm-wordpress.png" alt="Frieda FrauenZentrum maintenance update and new design">
+                    <p>Frieda FrauenZentrum maintenance update and new design</p>
+                </div>
+                <div class="thumbnail" onclick="showIframe('https://example2.com', 'cms')">
+                    <img src="img/alida-sun-comingsoon.png" alt="Project 2">
+                    <p> Alida Sun (coming soon...) </p>
+                </div>    
+
+                            
+            </div>
+            <iframe id="cms-iframe"></iframe>
+        </div>
+    </div>
+
+    <div class="tab" id="tab-4">
+        <label>Experimentations</label>
+        <div class="tab-content">
+            <h2 class="tab-title">Experimentations</h2>
+            <div class="section-description">
+                <p>These are some coding experiments I have done using p5.js and Processing. Click on any thumbnail to explore them in an iframe below.</p>
+            </div>
+            <div class="thumbnail-container">
+                <div class="thumbnail" data-url="https://editor.p5js.org/yara89/embed/WFnDzBtFV" data-section="experiment">
+                    <img src="img/experiment1.png" alt="Experiment 1">
+                    <p>Experiment 1</p>
+                </div>               
+            </div>
+            <iframe id="experiment-iframe"></iframe>
+        </div>
+    </div>
+    <div class="tab" id="tab-5">
+        <label>Other</label>
+        <div class="tab-content">
+            <h2 class="tab-title">Other</h2>
+    
+            <!-- Snapshots sectionn -->
+
+        <div id="photography-gallery">
+            <h3>Snapshots & documentation</h3>
+            <p>I love taking snapshots and documenting what happens around me, for since I was a child... </p>
+            <div class="thumbnail-container">
+                <a href="img/Nabi-Saleh.jpeg" data-lightbox="photography-gallery" data-title="Nabi Saleh 2012">
+                    <img src="img/Nabi-Saleh.jpeg" alt="Photo 1" class="thumbnail">
+                </a>
+                <a href="img/recanati-2022.jpg" data-lightbox="photography-gallery" data-title="Recanati 2022">
+                    <img src="img/recanati-2022.jpg" alt="Photo 2" class="thumbnail">
+                </a>
+                <a href="img/presswar.jpg" data-lightbox="photography-gallery" data-title="Bil'in 2010">
+                    <img src="img/presswar.jpg" alt="Photo 2" class="thumbnail">
+                </a>
+                <a href="img/beirut-roucheh-gaza-2014.jpg" data-lightbox="photography-gallery" data-title="al-Rauche in Beirut with list of Gaza's martyrs names 2014 ">
+                    <img src="img/beirut-roucheh-gaza-2014.jpg" alt="Photo 2" class="thumbnail">
+                </a>
+            </div>
+        </div>
+
+        <!-- Research and Curation Section -->
+        <h3>Research and Curation</h3>
+        <p>Here are some of projects which I assisted in research and curation:</p>
+        <div class="thumbnail-container">
+            <a href="https://palmuseum.org/en/exhibitions-and-events/exhibitions/jerusalem-lives-tahya-al-quds" target="_blank">
+                <img src="img/jerusalem-lives-pal-museum.jpg.webp" alt="Research 1" class="thumbnail">
+            </a>
+            <a href="https://palquest.org" target="_blank">
+                <img src="img/paljourneys-palmuseum.png" alt="Research 2" class="thumbnail">
+            </a>
+            <a href="https://palmuseum.org/en/exhibitions-and-events/exhibitions/labour-love-new-approaches-palestinian-embroidery" target="_blank">
+                <img src="img/labor-of-love-pal-museum.jpg.webp" alt="Research 3" class="thumbnail">
+            </a>
+        </div>
+
+        <!-- AI Generated Images Section -->
+        <h3>AI Generated Images</h3>
+        <p>Explore some of my AI-generated creations:</p>
+        <div class="thumbnail-container">
+            <a href="ai_image_large_1.jpg" data-lightbox="ai-gallery" data-title="AI Image 1">
+                <img src="ai_image_thumbnail_1.jpg" alt="AI Image 1" class="thumbnail">
+            </a>
+            <a href="ai_image_large_2.jpg" data-lightbox="ai-gallery" data-title="AI Image 2">
+                <img src="ai_image_thumbnail_2.jpg" alt="AI Image 2" class="thumbnail">
+            </a>
+        </div>
+    </div> 
+</div>
+    <div class="tab" id="tab-6">
+        <label>About</label>
+        <div class="tab-content">
+            <h2 class="tab-title">About Me</h2>
+            <p>Short bio and link to my GitHub and CV in PDF format.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>yara's Work..</p>
+        </br>
+        <div class="social-icons">
+            <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="github"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
