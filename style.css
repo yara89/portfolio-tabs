@@ -193,3 +193,45 @@ footer {
     font-size: 1.1em;
     max-width: 700px;
 }
+
+/* phone css */ 
+@media only screen and (max-width: 600px) {
+   
+    .accordion label {
+        font-size: 12px;  
+    }
+
+    .accordion h2 {
+        margin-top: 20px; 
+        font-size: 16px;   
+    }
+
+    iframe {
+        height: 300px;      
+        overflow-y: scroll; 
+    }
+
+    .thumbnail img {
+        width: 100%;  
+        height: auto;
+    }
+
+    .accordion {
+        padding: 10px;
+    }
+
+    .accordion input[type="radio"] + label {
+        width: 50px; 
+    }
+
+    .accordion p, .accordion h2 {
+        font-size: 14px; 
+    }
+
+    footer {
+        padding: 5px;
+        font-size:0.6em;
+    }
+    
+    
+}
