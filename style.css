@@ -130,22 +130,33 @@ p {
     margin: 10px;
     width: 150px;
     text-align: center;
+
 }
 
 .thumbnail img {
     width: 100%;
     height: auto;
+    border-radius: 8px;  
+    object-fit: cover;
+
+
+}
+.thumbnail img:hover {
+
+    box-shadow: 0 0 2px 1px rgba(238, 140, 220, 0.311);
+
 }
 
 .thumbnail:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 iframe {
-    width: 100%;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     border: none;
-    display: none; /* Initially hidden */
+    display: none;
     margin-top: 20px;
 }
 
